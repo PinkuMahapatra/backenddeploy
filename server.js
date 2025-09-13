@@ -10,6 +10,11 @@ app.get("/demo",async(req,res)=>{
 })
 
 
+app.get("/test",async(req,res)=>{
+    res.status(200).json({message:"new routes are added"})
+})
+
+
 
 app.listen(process.env.PORT||5050,()=>{
     console.log("SERVER IS RUNNING")
